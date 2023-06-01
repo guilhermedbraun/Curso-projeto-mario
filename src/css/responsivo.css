@@ -1,64 +1,140 @@
-@media (max-width: 1200px) {
+@media (max-width: 1024px) {
+    .fundo-video .video {
+        height: auto;
+    }
+    .fundo-video::after {
+        height: 100vh;
+        width: 100%;
+    }
+    .container {
+        padding: 0 20px;
+        display: block;
+        text-align: center;
+    }
+    .informacoes {
+        margin: 5px 0;
+    }
+    .descricao {
+        text-align: justify;
+        width: 98%;
+        margin: 5px auto 0;
+    }
+    .botao-trailer {
+        margin: 50px;
+    }
+    /* //////// Página Detalhes //////// */
+    .foto-marketing {
+        position: relative;
+        width: 98%;
+        padding: 0;
+    }
+    .imagem-titulo {
+        margin: 0;
+        width: 100%;
+    }
+    .descricao p {
+        margin: 10px 0;
+        font-size: 16px;
+    }
+    .box {
+        width: 98%;
+        margin-top: 5px;
+    }
+    .cards {
+        width: 300px;
+        margin: 7px;
+    }
+}
+@media (max-width: 900px) {
     body {
         background-color: #f44336;
     }
-
     .fundo-video {
         display: none;
     }
-
-    .container {
-        flex-wrap: wrap;
-        justify-content: center;
-        height: auto;
-        gap: 30px;
-    }
-
-    .container .mario {
-        max-width: 50%;
-    }
-
-    .container .informacoes {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-    }
-
-    .container .descricao {
-        color: #ffffff;
-        text-align: center;
-    }
-
-    .container .botao-trailer {
-        background-color: #263238;
-    }
-}
-
-@media (max-width: 500px) {
     .cabecalho {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 10px;
+        padding: 10px 20px;
+        background: #000000;
     }
-
-    .container .imagem-titulo {
-        max-width: 75%;
+    .container {
+        padding: 0 10px;
     }
-
-    .modal .fechar-modal {
-        width: 30px;
-        line-height: 30px;
+    .imagem-titulo {
+    width: 100%;
     }
-
-    .modal #video {
-        width: 300px;
-        height: 169px;
+    .botao-trailer {
+        margin: 30px;
+    }
+    .rodape {
+        padding: 25px;
+        background: #000000;
+    }
+    /* //////// Página Detalhes //////// */
+    .corpo {
+        width: 100%;
+        padding: 10px;
+    }
+    .foto-marketing {
+        width: 100%;
+    }
+    .descricao {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .descricao p {
+    font-size: 14px;
+    }
+    .botao-trailer {
+        margin: 20px;
+    }
+    .box {
+        width: 100%;
+        margin-top: 0;
+    }
+    .cards {
+        width: 100%;
+        margin: 3px 0;
     }
 }
-
-@media (max-width: 376px) {
-    .modal #video {
-        width: 250px;
-        height: 140px;
+@media (max-width: 500px) {
+    body {
+        width: 100%;
+    }
+    .logo {
+        width: 50px;
+    }
+    .cabecalho {
+        padding: 10px;
+    }
+    .cabecalho nav li a {
+        font-size: 20px;
+    }
+    .container {
+        padding: 0 5px;
+    }
+    .descricao {
+        width: 98%;
+    }
+    .rodape {
+        padding: 25px 0;
+    }
+    .rodape p {
+        font-size: 13px;
+    }
+    /* //////// Página Detalhes //////// */
+    .corpo {
+        width: 100%;
+        padding: 5px;
+    }
+    .descricao {
+        width: 100%;
+    }
+}
+@media (max-width: 350px) {
+    .cabecalho nav li a {
+        font-size: 18px;
+    }
+    .rodape p {
+        font-size: 11px;
     }
 }
