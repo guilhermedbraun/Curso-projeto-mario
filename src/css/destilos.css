@@ -1,190 +1,52 @@
 body {
+    display: block;
     font-family: 'Poppins';
-    background: #000000e6;
-    /*border: 2px solid #f83c03;*/
+    background: #000000;
 }
-
-.cabecalho {
-    display: flex;
-    justify-content: space-between;
-    padding: 25px;
-    max-width: 1440px;
-    margin: 0 auto;
-    /*border: 2px solid #fceb03;*/
-}
-
-.cabecalho .logo {
-    width: 65px;
-}
-
-.cabecalho .menu {
-    display: flex;
-    align-items: center;
-    height: 100%;
-}
-
-.cabecalho nav li a {
-    font-weight: bold;
-    color: #ffffff;
-    font-size: 25px;
-    padding: 10px 20px;
-    border-radius: 50px;
-    transition: 0.2s;
-}
-
-.cabecalho nav li a:hover {
-    background-color: #d5011d;
-}
-
-/* página detalhes */
-#corpo {
-    width: 90%;
-    margin: 0px auto;
-    padding: 0px;
-    /*border: 2px solid #1403f8;*/
-}
-
-#descricao {
-    color: #a8adb7;
-    margin: 1px;
-    font-size: 16px;
-    /*border: 2px solid #f80303;*/
-}
-/* imagens do corpo */
-figure.foto-marketing {
+.corpo {
+    display: block;
     position: relative;
-    width: 90%;
-    margin: 1px auto;
-    padding-top: 5px;
-    padding-right: 20px;
+    width: 100%;
+    margin: 0;
+    padding: 0 10px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
 }
-figure.foto-marketing img {
+.foto-marketing {
+    position: relative;
+    width: 95%;
+    margin: auto;
+    padding: 0 15px;
+}
+.foto-marketing img {
     width: 100%;
 }
-
-/* Rodapé */
-footer#rodape {
-    clear: both;
-    height: auto;
-    padding: 25px;
-    /* border: 2px solid #03f82c;*/
+.descricao {
+    width: 95%;
+    margin: 10px auto 0;
+    text-align: justify;
 }
-
-footer#rodape p {
-    text-align: center;
+.descricao p {
+    margin: 10px 15px 0;
+    color: #a8adb7;
+    font-size: 16px;
 }
-footer#rodape span {
+/* //////// Cartões ////////*/
+.box {
     display: inline-block;
     position: relative;
-    color: #a8adb7;
+    width: 95%;
+    height: auto;
+    margin-top: 10px;
 }
-
-/* Posters */
-.box {
-    background: #fff;
-    box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.15), 0px 2px 3px 0px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    padding: 2em;
-}
-.box.style2 {
-    margin-bottom: 0.25em;
-}
-
-.box.style2 .image {
+.cards {
+    display: inline-block;
     position: relative;
-    left: 2em;
-    top: 2em;
-    margin: -4em 0 0 -4em;
-    width: auto;
+    width: 400px;
+    margin: 5px;
 }
-.image.featured {
-    display: block;
+.cards img {
+    position: relative;
     width: 100%;
-    margin: 0 0 2em 0;
-}
-
-/* Row */
-
-/*
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    box-sizing: border-box;
-    align-items: stretch;
-    margin-top: -25px;
-    margin-left: -25px;
-    border: 1px solid #0cd617;
-}
-*/
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    box-sizing: border-box;
-    align-items: stretch;
-    margin: 5px 60px 20px 20px; /* espaço de fora */
-    /*border: 1px solid #0cd617;*/
-}
-
-    .row > * {
-        box-sizing: border-box;
-        padding: 20px 0 0 20px; /*espaço entre as fotos*/
-    }
-
-    .row.gtr-uniform > * > :last-child {
-        margin-bottom: 0;
-    }
-
-    .row.aln-left {
-        justify-content: flex-start;
-    }
-
-    .row.aln-center {
-        justify-content: center;
-    }
-
-    .row.aln-right {
-        justify-content: flex-end;
-    }
-
-    .row.aln-top {
-        align-items: flex-start;
-    }
-
-    .row.aln-middle {
-        align-items: center;
-    }
-
-    .row.aln-bottom {
-        align-items: flex-end;
-    }
-    .row > .imp {
-        order: -1;
-    }
-    .row > .col-4 {
-        width: 33.33333%;
-    }
-    .row > .off-4 {
-        margin-left: 33.33333%;
-    }
-    .row > .col-6 {
-        width: 50%;
-    }
-    .row > .off-6 {
-        margin-left: 50%;
-    }
-    .row > .col-12 {
-        width: 100%;
-    }
-    .row > .off-12 {
-        margin-left: 100%;
-    }
-
-/* Image */
-.image {
-	display: inline-block;
-	position: relative;
-}
-.image img {
-	display: block;
-	width: 100%; /* tamanho das imagens dos posters */
 }
